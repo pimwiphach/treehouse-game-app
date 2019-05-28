@@ -10,6 +10,9 @@ var phrase = document.getElementById("phrase");
 
 var missed = 0;
 
+const phraseUl = document.getElementsByTagName("ul")[0];
+// phraseUl.innerHTML = "";
+
 //Attach a event listener to the “Start Game” button to hide the start screen overlay.
 
 document.querySelector(".btn__reset").addEventListener("click", function() {
