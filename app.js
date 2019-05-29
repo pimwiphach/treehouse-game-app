@@ -165,11 +165,11 @@ function checkWin() {
     // console.log('checking to see if you won...');
     // console.log(guessesMissed);
 
-    if (guessesMissed < 10) {
+    if (guessesMissed < 5) {
       // keep playing
       // console.log('letters shown: ' + counterShow);
       // console.log('letters in phrase: ' + counterLetters);
-    } else if (guessesMissed === 10) {
+    } else if (guessesMissed === 5) {
       // Give animation time to finish
       // Disable the rest of the buttons in meantime
       const buttons = document.querySelectorAll("#qwerty button");
@@ -239,7 +239,7 @@ function init() {
   img.src = "images/liveHeart.png";
   listItem.appendChild(img);
 
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 5; i++) {
     scoreboard.appendChild(listItem.cloneNode(true));
   }
 
